@@ -1,0 +1,59 @@
+{
+    "skills": [
+        {
+            "id": 1,
+            "href": "https://developer.mozilla.org/fr/docs/Web/HTML",
+            "src": "/html.svg",
+            "name": "HTML"
+        },
+        {
+            "id": 2,
+            "href": "https://developer.mozilla.org/fr/docs/Web/CSS",
+            "src": "/css.svg",
+            "name": "CSS"
+        },
+        {
+            "id": 3,
+            "href": "https://developer.mozilla.org/fr/docs/Web/JavaScript",
+            "src": "/javascript.svg",
+            "name": "Javascript"
+        },
+        {
+            "id": 4,
+            "href": "https://reactjs.org/",
+            "src": "/react.svg",
+            "name": "React"
+        },
+        {
+            "id": 5,
+            "href": "https://vuejs.org/",
+            "src": "/vue.svg",
+            "name": "Vue.js"
+        },
+        {
+            "id": 6,
+            "href": "https://nextjs.org/",
+            "src": "/next.svg",
+            "name": "Next.js"
+        },
+        {
+            "id": 7,
+            "href": "https://nuxtjs.org/",
+            "src": "/nuxt.svg",
+            "name": "Nuxt.js"
+        },
+        {
+            "id": 8,
+            "href": "https://tailwindcss.com/",
+            "src": "/tailwindcss.svg",
+            "name": "Tailwindcss"
+        },
+        {
+            "id": 9,
+            "href": "https://www.notion.so/",
+            "src": "/notion.png",
+            "name": "Notion"
+        }
+    ]
+}
+  
