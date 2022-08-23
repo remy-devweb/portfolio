@@ -6,11 +6,11 @@ import useSWR from 'swr';
 //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function Skills () {
+export default function Tools () {
 
 //Set up SWR to run the fetcher function when calling "/api/staticdata"
 //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
-const { data, error } = useSWR('api/skillsdata', fetcher);
+const { data, error } = useSWR('api/toolsdata', fetcher);
 
 //Handle the error state
 if (error) return <div>Failed to load</div>;
@@ -19,28 +19,28 @@ if (!data) return <div className='animate-pulse'>Loading...</div>;
 //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
 
     return (
-        <section id="skills" className='w-full lg:w-2/5 pt-16'>
+        <section id="tools" className='w-full lg:w-2/5 pt-16'>
             <div className='flex flex-col items-center justify-center'>
-                <h1 className='text-3xl lg:text-4xl text-center text-white underline uppercase my-5'>Technologies</h1>
+                <h1 className='text-3xl lg:text-4xl text-center text-white underline uppercase my-5'>Outils</h1>
                 <div className='flex flex-row flex-wrap justify-center w-[70vw] lg:w-[30vw] mt-8'>
-                    {data.skills.map(skill =>
+                    {data.tools.map(tool =>
                         <a
-                        key={skill.id}
-                        href={skill.href}
+                        key={tool.id}
+                        href={tool.href}
                         target="_blank"
                         rel="noreferrer"
                         className="flex flex-col items-center justify-around m-3"
                         >
                             <Image
-                                src={skill.src}
+                                src={tool.src}
                                 alt="Image"
                                 width={80}
                                 height={80}
-                                title={skill.title}
+                                title={tool.title}
                                 reponsive="true"
-                                className="hover:scale-110"
+                                className="hover:animate-pulse"
                             />
-                            <p className="text-white">{skill.name}</p>
+                            <p className="text-white">{tool.name}</p>
                         </a>
                     )}
                 </div>
