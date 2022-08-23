@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Skills from '../components/Skills'
+import Tools from '../components/Tools'
 import About from '../components/About'
 import Projects from '../components/Projects'
 import Hobbies from '../components/Hobbies'
@@ -63,7 +64,10 @@ export default function Home() {
                 </h2>
               </div>
             </section>
-            <Skills/>
+            <div className='w-full flex flex-col lg:flex-row justify-center'>
+              <Skills/>
+              <Tools/>
+            </div>
             <Projects/>
             <About/>
             {/* <Hobbies/> */}

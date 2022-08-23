@@ -1,0 +1,75 @@
+{
+    "tools": [
+        {
+            "id": 1,
+            "href": "https://git-scm.com/",
+            "src": "/git.svg",
+            "name": "Git",
+            "title": "Gestionnaire de versions"
+        },
+        {
+            "id": 2,
+            "href": "https://github.com/",
+            "src": "/Octicons-mark-github.svg",
+            "name": "GitHub",
+            "title": "Plateforme de développement"
+        },
+        {
+            "id": 3,
+            "href": "https://www.atlassian.com/fr/software/jira",
+            "src": "/jira.svg",
+            "name": "Jira",
+            "title": "Logiciel de gestion de projets"
+        },
+        {
+            "id": 4,
+            "href": "https://trello.com/",
+            "src": "/trello.svg",
+            "name": "Trello",
+            "title": "Outil de gestion de projet"
+        },
+        {
+            "id": 5,
+            "href": "https://www.figma.com/",
+            "src": "/figma.svg",
+            "name": "Figma",
+            "title": "Outil de design UI"
+        },
+        {
+            "id": 6,
+            "href": "https://www.adobe.com/fr/products/xd.html",
+            "src": "/Adobe_XD_CC_icon.svg",
+            "name": "Adobe XD",
+            "title": "Outil d'UI/UX"
+        },
+        {
+            "id": 7,
+            "href": "https://code.visualstudio.com/",
+            "src": "/vscode.svg",
+            "name": "VSCode",
+            "title": "Editeur de code"
+        },
+        {
+            "id": 8,
+            "href": "https://www.jetbrains.com/fr-fr/phpstorm/",
+            "src": "/PhpStorm_icon.svg",
+            "name": "PhpStorm",
+            "title": "Editeur de code orienté PHP"
+        },
+        {
+            "id": 9,
+            "href": "https://www.jetbrains.com/fr-fr/webstorm/",
+            "src": "/WebStorm_icon.svg",
+            "name": "WebStorm",
+            "title": "Editeur de code orienté JavaScript"
+        },
+        {
+            "id": 10,
+            "href": "https://www.notion.so/",
+            "src": "/notion.png",
+            "name": "Notion",
+            "title": "Application de gestion et espace de travail multifonction"
+        }
+    ]
+}
+  
