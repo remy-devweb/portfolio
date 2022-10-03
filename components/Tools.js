@@ -38,7 +38,7 @@ if (!data) return <div className='animate-pulse'>Loading...</div>;
                                 height={80}
                                 title={tool.title}
                                 reponsive="true"
-                                className="hover:animate-pulse"
+                                className="transition hover:scale-110 hover:delay-200 hover:ease-in"
                             />
                             <p className="text-white">{tool.name}</p>
                         </a>
