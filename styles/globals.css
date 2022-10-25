@@ -25,7 +25,7 @@ a {
       @apply flex items-center justify-center text-lg font-bold text-gray-900 transition duration-300 ease-in ;
   }
    .square {
-     @apply flex h-[90px] w-[90px] md:h-[100px] md:w-[100px] items-center justify-center bg-[#3f4045] rounded-xl shadow-md active:scale-125 transition duration-200 ease-in hover:bg-[#171738] shadow-[#5da9e9] ;
+     @apply flex h-[90px] w-[90px] md:h-[100px] md:w-[100px] items-center justify-center bg-[#5da9e9] rounded-xl shadow-md active:scale-125 transition duration-200 ease-in hover:bg-[#171738] shadow-[#003F91] ;
    }
  
    .board {

@@ -1,5 +1,4 @@
 import Details from "../../components/Details"
-import Image from "next/image";
 import { useState } from "react";
 
 export default function tictactoe () {
@@ -34,12 +33,6 @@ export default function tictactoe () {
 
         return (
             <div className="board">
-                <Image
-                    src={"/Tic_tac_toe.svg"}
-                    alt="Image"
-                    width={52}
-                    height={52}
-                />
                 <div className="board-row">
                 {renderSquare(0)}
                 {renderSquare(1)}
