@@ -74,7 +74,7 @@ export default function Home() {
             <Contact/>
           </main>
           <footer className={styles.footer}>
-            <p>Copyright © 2022 - Tous droits réservés - Créé avec 
+            <p>Copyright © 2023 - Tous droits réservés - Créé avec 
               <span className="mx-1">
                 <a
                   href="https://nextjs.org/"
