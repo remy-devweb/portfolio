@@ -22,7 +22,7 @@ if (!data) return <div className='animate-pulse'>Loading...</div>;
         <section id="tools" className='w-full lg:w-2/5 pt-16'>
             <div className='flex flex-col items-center justify-center'>
                 <h1 className='text-3xl lg:text-4xl text-center text-white underline uppercase my-5'>Outils</h1>
-                <div className='flex flex-row flex-wrap justify-center w-[70vw] lg:w-[30vw] mt-8'>
+                <div className='flex flex-row flex-wrap justify-center w-[90vw] lg:w-[30vw] mt-8'>
                     {data.tools.map(tool =>
                         <a
                         key={tool.id}
