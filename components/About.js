@@ -24,7 +24,7 @@ export default function About () {
                     </div>
                 </div>
                 <div>
-                    <a href="/CV_Rémy_DEIDIER.pdf" download target="_blank" rel="noreferrer">
+                    <a href="/CV_Developpeur_Web_Remy_Deidier.pdf" download target="_blank" rel="noreferrer">
                         <button type="submit" className="btn btn-md btn-wide bg-[#ffb703] hover:bg-[#fb8500] border-none my-5">Télécharger mon CV</button>
                     </a>
                 </div>
@@ -35,6 +35,28 @@ export default function About () {
                             {/* <!-- Vertical middle line--> */}
                             <div className="absolute hidden w-px h-full transform -translate-x-1/2 bg-[#ffb703] lg:block left-1/2"></div>
                             <div className="space-y-12 lg:space-y-8">
+                                {/* <!-- Right section --> */}
+                                <div>
+                                    <div className="flex flex-col items-center">
+                                        <div className="flex items-center justify-end w-full mx-auto">
+                                            <div className="w-full lg:w-1/2 lg:pl-24">
+                                                <div className="p-4 bg-white rounded-xl">
+                                                    <h3 className="text-2xl font-bold mb-2">C-Koya Tech</h3>
+                                                    <p className="text-xl font-semibold mb-2">Développeur Web</p>
+                                                    <p>- Formation sur le projet interne en React et Symfony.<br/>
+                                                    - Traitement des tickets et des retours de projets clients.<br/>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            className="absolute flex items-center justify-center w-28 h-8 
+                                            transform -translate-x-1/2 -translate-y-4 
+                                            bg-[#ffb703] border-2 border-white rounded-full left-1/2 sm:translate-y-0">
+                                            <span className="text-white">2023</span>
+                                        </div>
+                                    </div>
+                                </div>
                                 {/* <!-- Left section --> */}
                                 <div>
                                     <div className="flex flex-col items-center">
