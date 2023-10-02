@@ -15,14 +15,14 @@ const { data, error } = useSWR('api/skillsdata', fetcher);
 //Handle the error state
 if (error) return <div>Failed to load</div>;
 //Handle the loading state
-if (!data) return <div className='animate-pulse'>Loading...</div>;
+if (!data) return <span className="loading loading-spinner loading-lg"></span>;
 //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
 
     return (
         <section id="skills" className='w-full lg:w-2/5 pt-16'>
             <div className='flex flex-col items-center justify-center'>
                 <h1 className='text-3xl lg:text-4xl text-center text-white underline uppercase my-5'>Technologies</h1>
-                <div className='flex flex-row flex-wrap justify-center w-[90vw] lg:w-[30vw] mt-8'>
+                <div className='flex flex-row flex-wrap justify-center w-[90vw] lg:w-[50vw] mt-8'>
                     {data.skills.map(skill =>
                         <a
                         key={skill.id}

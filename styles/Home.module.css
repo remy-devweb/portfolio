@@ -12,7 +12,7 @@
 }
 
 .homepage {
-  height: 100vh;
+  height: 87vh;
   width: 100vw;
   background: url('../public/image.jpg');
   background-position: center;
@@ -35,23 +35,6 @@
   from { border-color: transparent }
   to { border-color: #fb8500; }
 }
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  justify-content: center;
-  align-items: center;
-  background-color: #023047;
-  color: white;
-}
-
-/* .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-} */
 
 .title a {
   color: #0070f3;

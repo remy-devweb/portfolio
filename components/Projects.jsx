@@ -17,9 +17,9 @@ if (!data) return <div className='animate-pulse'>Loading...</div>;
 //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
 
     return (
-        <section id="projects" className='w-full py-16 mt-16'>
+        <section id="projects" className='w-full py-16'>
             <div className="flex flex-col items-center justify-center">
-                <h1 className='text-2xl lg:text-3xl text-white underline uppercase my-5'>Projets</h1>
+                <h1 className='text-3xl lg:text-4xl text-white underline uppercase my-5'>Projets</h1>
                 <div className="flex flex-row flex-wrap justify-around w-[80vw] mx-5 my-8">
                     {data.projects.map(project =>
                         <div key={project.id} className="card lg:card-side bg-base-100 shadow-xl m-5 group lg:perspective lg:relative lg:w-[600px] lg:h-[300px] lg:overflow-hidden lg:transition-all lg:duration-700 lg:hover:rotate-y-180">

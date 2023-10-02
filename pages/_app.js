@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import Layout from '../components/Layout';
 import { ThemeProvider } from 'next-themes';
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
@@ -14,7 +15,9 @@ function MyApp({ Component, pageProps }) {
       }}
     >
       <ThemeProvider enableSystem={false} attribute="class">
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </ThemeProvider>
     </GoogleReCaptchaProvider>
     )

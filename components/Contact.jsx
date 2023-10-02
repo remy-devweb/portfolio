@@ -67,7 +67,7 @@ const form = useRef(null);
   };
 
     return (
-        <section id="contact" className='w-full pt-16'>
+        <section id="contact" className='w-full min-h-[87vh] pt-16 bg-[#345ca8] dark:bg-[#023047]'>
             <div className="flex flex-col items-center justify-center">
                 <h1 className='text-3xl lg:text-4xl text-white underline uppercase my-5'>Contactez-Moi</h1>
                 <div className="lg:w-[30vw]">
