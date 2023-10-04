@@ -40,7 +40,7 @@ export default function Projects() {
                                 </p>
                                 <div className="mt-4">
                                     {project.tags.map(tag =>
-                                        <span className="bg-blue-200 text-blue-700 px-2 py-1 rounded-full text-xs mr-2">
+                                        <span key={tag} className="bg-blue-200 text-blue-700 px-2 py-1 rounded-full text-xs mr-2">
                                             {tag}
                                         </span>
                                     )}
