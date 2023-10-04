@@ -10,61 +10,61 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
-export default function Contact () {
+export default function Contact() {
 
-//with the useref hook you can do it easily
-const form = useRef(null);
+    //with the useref hook you can do it easily
+    const form = useRef(null);
 
 
-  // Input states
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+    // Input states
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
-  // reCaptcha
-  const { executeRecaptcha } = useGoogleReCaptcha();
+    // reCaptcha
+    const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const handleSubmitForm =
-    (e) => {
-      e.preventDefault();
-      if (!executeRecaptcha) {
-        console.log("Execute recaptcha not yet available");
-        return;
-      }
-      executeRecaptcha().then((gReCaptchaToken) => {
-        submitForm(gReCaptchaToken);
-      });
+    const handleSubmitForm =
+        (e) => {
+            e.preventDefault();
+            if (!executeRecaptcha) {
+                console.log("Execute recaptcha not yet available");
+                return;
+            }
+            executeRecaptcha().then((gReCaptchaToken) => {
+                submitForm(gReCaptchaToken);
+            });
+        };
+
+    // Form submit handler
+    const submitForm = async (token) => {
+
+        const res = await fetch('/api/submit-form', {
+            method: 'POST',
+            headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name, email, message, token }),
+        });
+        // Success if status code is 200
+        switch (res.status) {
+            case 200:
+                toast('Thank you for contacting us!', { type: 'success' });
+                setEmail(''),
+                    setName(''),
+                    setMessage('')
+                break;
+            case 405:
+                toast('Error submitting the form.', { type: 'error' });
+                break;
+            case 500:
+                toast('An error has occurred, please try again later.', { type: 'error' });
+                break;
+            default:
+                toast('Sorry, an error occurred.', { type: 'error' });
+        }
     };
-
-  // Form submit handler
-  const submitForm =  async (token) => {
-
-    const res = await fetch('/api/submit-form', {
-      method: 'POST',
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message, token }),
-    });
-    // Success if status code is 200
-    switch (res.status) {
-        case 200:
-            toast('Thank you for contacting us!', { type : 'success'});
-            setEmail(''),
-            setName(''),
-            setMessage('')
-            break;
-        case 405:
-            toast('Error submitting the form.', { type : 'error'});
-            break;
-        case 500:
-            toast('An error has occurred, please try again later.', { type : 'error'});
-            break;
-        default:
-            toast('Sorry, an error occurred.', { type: 'error' });
-    }
-  };
 
     return (
         <section id="contact" className='w-full min-h-[87vh] pt-16 bg-[#345ca8] dark:bg-[#023047]'>
@@ -84,7 +84,7 @@ const form = useRef(null);
                                 placeholder-transparent 
                                 focus:outline-none 
                                 focus:border-[#ffb703]
-                                ' 
+                                '
                                 placeholder='email'>
                             </input>
                             <label htmlFor='email'
@@ -115,7 +115,7 @@ const form = useRef(null);
                                 placeholder-transparent 
                                 focus:outline-none 
                                 focus:border-[#ffb703]
-                                ' 
+                                '
                                 placeholder='name'>
                             </input>
                             <label htmlFor='name'
@@ -147,7 +147,7 @@ const form = useRef(null);
                                 placeholder-transparent 
                                 focus:outline-none 
                                 focus:border-[#ffb703]
-                                ' 
+                                '
                                 placeholder='Message'>
                             </textarea>
                             <label htmlFor='message'
@@ -172,17 +172,17 @@ const form = useRef(null);
                     <p className='text-white text-sm text-center pb-5'>( Ce formulaire a été intégré avec
                         <span className="mx-1">
                             <a
-                            href="https://www.notion.so/"
-                            target="_blank"
-                            rel="noreferrer"
+                                href="https://www.notion.so/"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <Image
-                                src="/notion.png"
-                                title='Notion'
-                                alt="Image"
-                                width={20}
-                                height={20}
-                                reponsive="true"
+                                    src="/notion.png"
+                                    title='Notion'
+                                    alt="Image"
+                                    width={20}
+                                    height={20}
+                                    reponsive="true"
                                 />
                             </a>
                         </span>
