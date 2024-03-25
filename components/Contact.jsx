@@ -73,12 +73,13 @@ export default function Contact() {
                 <div className="lg:w-[30vw]">
                     <ToastContainer />
                     <form className='my-8 flex flex-col items-center justify-center' ref={form} onSubmit={handleSubmitForm}>
-                        <div className='relative my-4'>
+                        <div className='relative my-4 w-full'>
                             <input id="email" name='email' type="email" value={email} onChange={(e) => setEmail(e.target.value)} required
                                 className='
                                 peer 
                                 border-b-2 
                                 border-gray-300 
+                                w-full
                                 lg:w-[30vw]
                                 rounded
                                 placeholder-transparent 
@@ -104,12 +105,13 @@ export default function Contact() {
                                 '
                             >Email</label>
                         </div>
-                        <div className='relative mt-4 mb-4 min'>
+                        <div className='relative my-4 w-full'>
                             <input id="name" name='name' type='text' value={name} onChange={(e) => setName(e.target.value)} required
                                 className='
                                 peer 
                                 border-b-2 
                                 border-gray-300 
+                                w-full
                                 lg:w-[30vw]
                                 rounded
                                 placeholder-transparent 
@@ -135,12 +137,13 @@ export default function Contact() {
                                 '
                             >Nom</label>
                         </div>
-                        <div className='relative mt-4 mb-4'>
+                        <div className='relative my-4 w-full'>
                             <textarea id="message" name='message' type='text' value={message} onChange={(e) => setMessage(e.target.value)} required
                                 className='
                                 peer 
                                 border-b-2 
                                 border-gray-300 
+                                w-full
                                 lg:w-[30vw]
                                 min-h-[12vh]
                                 rounded
@@ -167,7 +170,7 @@ export default function Contact() {
                                 '
                             >Message</label>
                         </div>
-                        <button type="submit" className="btn btn-md w-full bg-[#ffb703] hover:bg-[#fb8500] my-5">Envoyer</button>
+                        <button type="submit" className="btn btn-md w-full bg-[#ffb703] hover:bg-[#fb8500] my-5 text-white">Envoyer</button>
                     </form>
                     <p className='text-white text-sm text-center pb-5'>( Ce formulaire a été intégré avec
                         <span className="mx-1">

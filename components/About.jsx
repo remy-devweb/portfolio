@@ -25,7 +25,7 @@ export default function About () {
                 </div>
                 <div>
                     <a href="/CV_Developpeur_Web_Remy_Deidier.pdf" download target="_blank" rel="noreferrer">
-                        <button type="submit" className="btn btn-md btn-wide bg-[#ffb703] hover:bg-[#fb8500] border-none my-5">Télécharger mon CV</button>
+                        <button type="submit" className="btn btn-md btn-wide bg-[#ffb703] hover:bg-[#fb8500] border-none my-5 text-white">Télécharger mon CV</button>
                     </a>
                 </div>
                 <div className="flex flex-col justify-center w-[80vw] py-6 lg:py-12">

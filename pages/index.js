@@ -1,5 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Skills from "../components/Skills"
+import Tools from "../components/Tools"
+import Projects from '../components/Projects'
+import About from '../components/About'
+import Contact from '../components/Contact'
+
 
 
 export default function Home() {
@@ -21,6 +27,15 @@ export default function Home() {
                             </div>
                         </h2>
                     </div>
+                </section>
+                <section>
+                    <div className="flex flex-col w-screen justify-center items-center bg-[#345ca8] dark:bg-[#023047]">
+                        <Skills />
+                        <Tools />
+                    </div>
+                    <Projects/>
+                    <About/>
+                    <Contact/>
                 </section>
             </main>
         </>

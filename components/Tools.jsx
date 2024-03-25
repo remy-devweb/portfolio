@@ -17,7 +17,7 @@ export default function Tools() {
     //Handle the loading state
     if (!data) return <span className="loading loading-spinner loading-lg"></span>;
     //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
-k
+
     return (
         <section id="tools" className='w-full lg:w-2/5 py-16'>
             <div className='flex flex-col items-center justify-center'>

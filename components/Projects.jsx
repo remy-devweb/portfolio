@@ -19,7 +19,7 @@ export default function Projects() {
     //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
 
     return (
-        <section id="projects" className='w-full py-16'>
+        <section id="projects" className='w-full py-16 bg-[#345ca8] dark:bg-[#023047]'>
             <div className="flex flex-col items-center justify-center">
                 <h1 className='text-3xl lg:text-4xl text-white underline uppercase my-5'>Projets</h1>
                 <div className="flex flex-row flex-wrap justify-around w-[90vw] mx-5 my-8">
@@ -29,7 +29,7 @@ export default function Projects() {
                                 <img
                                     src={project.src}
                                     alt="Image"
-                                    className="w-full h-auto lg:h-full"
+                                    className="w-full h-auto lg:h-full object-cover"
                                 />
                             </div>
                             {/* Card content */}
@@ -46,11 +46,11 @@ export default function Projects() {
                                     )}
                                 </div>
                                 <div className="flex self-end justify-end p-4 text-right mt-auto">
-                                    <Link href={project.url}>
+                                    {/* <Link href={project.url}>
                                         <a className="bg-[#3b8bc4] hover:bg-[#966fb3] text-white font-semibold py-2 px-4 rounded-xl transition-all duration-300 ease-in-out">
                                             Voir
                                         </a>
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                         </div>
