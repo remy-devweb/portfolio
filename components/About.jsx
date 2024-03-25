@@ -3,7 +3,7 @@ import Profil from "../public/photo-profil.png"
 
 export default function About () {
     return (
-        <section id="about" className='w-full py-24 bg-[#219ebc]'>
+        <section id="about" className='w-full py-16 bg-[#345ca8] dark:bg-[#023047]'>
             <div className="flex flex-col items-center justify-center">
                 <h1 className='text-3xl lg:text-4xl text-white underline uppercase my-5'>A Propos</h1>
                 <div className="flex flex-col lg:flex-row items-center w-[70vw] m-5">
@@ -16,7 +16,7 @@ export default function About () {
                         </div>
                     </div>
                     <div>
-                        <p>
+                        <p className="text-white">
                         Je m&apos;appelle Rémy DEIDIER, je suis développeur Web et Mobile diplômé de la Web@cadémie by Epitech, et je suis à la recherche d’un poste orienté <span className="font-semibold uppercase">front-end </span>
                         qui me permettrait de mettre en œuvre mes nouvelles compétences et de continuer à les faire grandir.<br/>
                         Que ce soit pour de l&apos;intégration ou du développement, je suis déterminé à dépasser mes limites et à apprendre au quotidien.
@@ -25,7 +25,7 @@ export default function About () {
                 </div>
                 <div>
                     <a href="/CV_Developpeur_Web_Remy_Deidier.pdf" download target="_blank" rel="noreferrer">
-                        <button type="submit" className="btn btn-md btn-wide bg-[#ffb703] hover:bg-[#fb8500] border-none my-5">Télécharger mon CV</button>
+                        <button type="submit" className="btn btn-md btn-wide bg-[#ffb703] hover:bg-[#fb8500] border-none my-5 text-white">Télécharger mon CV</button>
                     </a>
                 </div>
                 <div className="flex flex-col justify-center w-[80vw] py-6 lg:py-12">

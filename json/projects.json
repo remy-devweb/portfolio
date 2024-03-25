@@ -5,6 +5,7 @@
             "title": "Débuter avec React",
             "src": "/LMJ - Débuter avec React.gif",
             "content": "Objectif du Projet : Comprendre le fonctionnement de React, créer une application complète avec Create React App.",
+            "tags": ["React.js"],
             "url": ""
         },
         {
@@ -12,6 +13,7 @@
             "title": "Créer une application React complète",
             "src": "/shiny.png",
             "content": "Objectif du Projet : Construire une Single Page Application (SPA) complète, qui respecte une architecture robuste.",
+            "tags": ["React.js","Hooks","SPA"],
             "url": ""
         },
         {
@@ -19,6 +21,7 @@
             "title": "Utiliser Redux pour gérer l’état d'applications",
             "src": "/tennis.png",
             "content": "Objectif du Projet : Identifier les concepts clés du state management et de Redux en manipulant des states complexes d’une application React.",
+            "tags": ["React.js", "Redux"],
             "url": ""
         }
     ]

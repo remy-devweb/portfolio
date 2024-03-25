@@ -1,0 +1,49 @@
+{
+    "about": [
+        {
+            "prez": "Je m&apos;appelle Rémy DEIDIER, je suis développeur Web et Mobile diplômé de la Web@cadémie by Epitech, et je suis à la recherche d’un poste orienté <b>Front-End</b> qui me permettrait de mettre en œuvre mes nouvelles compétences et de continuer à les faire grandir.<br/> Que ce soit pour de l&apos;intégration ou du développement, je suis déterminé à dépasser mes limites et à apprendre au quotidien."
+        }
+    ],
+    "exp": [
+        {
+            "id": 1,
+            "company": "C-Koya Tech",
+            "job": "Développeur Web",
+            "details": "- Formation sur le projet interne en React et Symfony.<br/> - Traitement des tickets et des retours de projets clients.<br/>",
+            "year": "2023",
+            "position": "justify-end"
+        },
+        {
+            "id": 2,
+            "company": "Ati4Group",
+            "job": "Développeur Web Font-End",
+            "details": "- Refonte d&apos;un site vitrine pour un festival de Musique, avec Prismic, Gatsby et GaphQL. Contenu entièrement dynamique.<br/>- Refonte d&apos;un site e-commerce de vente de tissu, en Magento 2, à l&apos;aide de Tailwind.css.<br/>",
+            "year": "2022",
+            "position": "justify-start"
+        },
+        {
+            "id": 3,
+            "company": "MAGENTO ACADEMY",
+            "job": "Développeur Web",
+            "details": "- Rappel des bonnes pratique PHP<br/>- Initiation au CMS Magento 2<br/>- Formation plus avancée sur Magento 2 (Back & Front)<br/>",
+            "year": "2021 - 2022",
+            "position": "justify-end"
+        },
+        {
+            "id": 4,
+            "company": "HUMANIS (Collectif) - Alternance",
+            "job": "Développeur Web",
+            "details": "- Développement d’une application mobile en ReactNative<br/>- Réalisation du backoffice de gestion de l’application en React<br/>- Migration du CRM de gestion vers une version plus récente en Laravel et Vue.js<br/>- Analyse du besoin client et réalisation d’un cachier des charges<br/>- Travail en équipe à l’aide de Trello et Github<br/>- Rédaction de comptes rendus hebdomadaires<br/>",
+            "year": "2018 - 2020",
+            "position": "justify-start"
+        },
+        {
+            "id": 5,
+            "company": "WEB@CADEMIE by EPITECH",
+            "job": "Développeur Web et Mobile",
+            "details": "Formation sur deux ans avec adaptation et autonomie :<br/>- Pédagogie Epitech<br/>- Capacité à apprendre de nouveaux langages rapidement<br/>- Projets réalisés en solo ou en équipe<br/>- Gestion et organisation de projets<br/>- Initiation à la méthode agile et au Git Workflow<br/>- Conception et Gestion de Base de Données<br/>- Présentations et compte-rendu pour chaque projet<br/>",
+            "year": "2017 - 2019",
+            "position": "justify-end"
+        }
+    ]
+}
